@@ -38,6 +38,14 @@
                BlueprintName = "WatsonDeveloperCloudTests"
                ReferencedContainer = "container:WatsonDeveloperCloud.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AuthenticationTests/testFacebookOAuth()">
+               </Test>
+               <Test
+                  Identifier = "AuthenticationTests/testFacebookOAuthBadCredentials()">
+               </Test>
+            </SkippedTests>
             <LocationScenarioReference
                identifier = "Mexico City, Mexico"
                referenceType = "1">
