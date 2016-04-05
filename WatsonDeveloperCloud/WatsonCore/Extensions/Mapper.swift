@@ -22,7 +22,7 @@ extension Mapper {
     
     // Maps an Object to a JSON string with the given header
     internal func toJSONString(object: N, header: String) -> String? {
-        let json = toJSONString(object)
+        let json = toJSONString(object, prettyPrint: false)
         if let json = json {
             return "{ \"\(header)\": \(json) }"
         } else {
@@ -30,9 +30,24 @@ extension Mapper {
         }
     }
     
+    internal func myToJSONString(objects: [N]) -> String? {
+        if (objects.count <= 0) {
+            return nil
+        }
+        var o = "[";
+        for (index, ele) in objects.enumerate() {
+            if index > 0 {
+                o += ", "
+            }
+            o += toJSONString(ele, prettyPrint: false)!
+        }
+        o += "]"
+        return o
+    }
+    
     // Maps an array of Objects to a JSON string with the given header
     internal func toJSONString(objects: [N], header: String) -> String? {
-        let json = toJSONString(objects)
+        let json = myToJSONString(objects)
         if let json = json {
             return "{ \"\(header)\": \(json) }"
         } else {
@@ -42,13 +57,14 @@ extension Mapper {
     
     // Maps an Object to a JSON string and represents it as NSData
     internal func toJSONData(object: N) -> NSData? {
-        let json = toJSONString(object)
+        let json = toJSONString(object, prettyPrint: false)
         return json?.dataUsingEncoding(NSUTF8StringEncoding)
     }
     
     // Maps an array of Objects to a JSON string and represents it as NSData
     internal func toJSONData(objects: [N]) -> NSData? {
-        let json = toJSONString(objects)
+        
+        let json = myToJSONString(objects)
         return json?.dataUsingEncoding(NSUTF8StringEncoding)
     }
     
