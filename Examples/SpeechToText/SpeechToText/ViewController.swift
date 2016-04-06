@@ -19,7 +19,7 @@ import AVFoundation
 
 import WatsonDeveloperCloud
 
-class ViewController: UIViewController, AVAudioRecorderDelegate {
+class ViewController: UIViewController, AVAudioRecorderDelegate,UITextFieldDelegate {
 
     @IBOutlet weak var startStopRecordingButton: UIButton!
     @IBOutlet weak var playRecordingButton: UIButton!
@@ -37,8 +37,16 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
     var stopStreamingCustom: (Void -> Void)? = nil
     var captureSession: AVCaptureSession? = nil
     
+    let ttsService = TextToSpeech(username: "003e4ba5-ddf9-4c7e-8e58-c2556033172e", password: "oeIe6aMHQidG")
+    let transService = LanguageTranslation(username: "1add85f4-08e1-47fc-a6e6-c1f5b9401094", password: "tHG2e8ISF1ua")
+    let disconnectedTesting = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textField.delegate = self
+        translateTextField.delegate = self
+//        textField.center = view.center;
         
         // create file to store recordings
         let documents = NSSearchPathForDirectoriesInDomains(.DocumentDirectory,
@@ -70,7 +78,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         recorder.prepareToRecord()
         
         // disable play and transcribe buttons
-        playRecordingButton.enabled = false
+        playRecordingButton.enabled = true
         transcribeButton.enabled = false
 
         instantiateSTT()
@@ -107,6 +115,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         stt = SpeechToText(username: user, password: password)
     }
 
+    @IBOutlet weak var translateTextField: UITextField!
     @IBAction func startStopRecording() {
 
         // ensure recorder is set up
@@ -148,6 +157,64 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         }
     }
 
+    @IBOutlet weak var textField: UITextField!
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        if textField == self.textField {
+            textToSpeech()
+        }
+        if textField == self.translateTextField {
+            translateText()
+        }
+        return true
+    }
+    
+    func translateText() {
+        print("entering translateText")
+        if let enText = translateTextField.text {
+            print("translating " + enText + " from en to de");
+            if disconnectedTesting { return}
+            transService.translate(enText, source: "en", target: "es") { text, error in
+                print(text);
+            }
+        }
+    }
+    
+    func textToSpeech() {
+        print("entering textToSpeech")
+//        playRecordingButton.enabled = false
+//        playRecordingButton.titleLabel?.text = "Playing"
+        let voice = "en-US_AllisonVoice" //"de-DE_DieterVoice"
+        if let text = textField.text {
+            print("synthesizing " + text + " with " + voice);
+            if disconnectedTesting {return}
+            ttsService.synthesize(text, voice: voice, completionHandler: {
+                data, error in
+                if (error != nil) {
+                    print("error happened during synthesizing ")
+                    print(error)
+                }
+                if let data = data {
+                    do {
+                        let audioPlayer = try AVAudioPlayer(data: data)
+                        audioPlayer.prepareToPlay()
+                        print("now playing: " + text)
+                        audioPlayer.play()
+                        self.playRecordingButton.enabled = true
+                        sleep(1)
+                    } catch {
+                        print("Play Recording Error with audio player.")
+                    }
+                } else {
+                    print("data is not available from synthesizer")
+                }
+                
+            })
+        } else {
+            print("please enter text to speak")
+        }
+    }
+
     @IBAction func playRecording() {
 
         // ensure recorder is set up
@@ -159,7 +226,19 @@ class ViewController: UIViewController, AVAudioRecorderDelegate {
         // play saved recording
         if (!recorder.recording) {
             do {
-                player = try AVAudioPlayer(contentsOfURL: recorder.url)
+                let url = "http://www.typeandspell.com/assets/words.basic/w/00002795.wav"
+                let wavURL = NSURL(string: url)!
+//                let wavURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("SpeechSample", ofType: "wav")!)
+//                player = try AVAudioPlayer(contentsOfURL: recorder.url)
+                let fileURL = NSURL(string:url)
+                let soundData = NSData(contentsOfURL:fileURL!)
+                player = try AVAudioPlayer(data: soundData!)
+                player!.prepareToPlay()
+                player!.volume = 1.0
+//                audioPlayer.delegate = self
+//                audioPlayer.play()
+                
+//                player = try AVAudioPlayer(contentsOfURL: wavURL)
                 player?.play()
             } catch {
                 failure("Play Recording", message: "Error creating audio player.")

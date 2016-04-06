@@ -7,24 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7A1D818A1C8E8D4100E64242 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D81831C8E8D4100E64242 /* Alamofire.framework */; };
-		7A1D818B1C8E8D4100E64242 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D81841C8E8D4100E64242 /* AlamofireObjectMapper.framework */; };
-		7A1D818C1C8E8D4100E64242 /* HTTPStatusCodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D81851C8E8D4100E64242 /* HTTPStatusCodes.framework */; };
-		7A1D818D1C8E8D4100E64242 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D81861C8E8D4100E64242 /* ObjectMapper.framework */; };
-		7A1D818E1C8E8D4100E64242 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D81871C8E8D4100E64242 /* Starscream.framework */; };
-		7A1D818F1C8E8D4100E64242 /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D81881C8E8D4100E64242 /* WatsonDeveloperCloud.framework */; };
-		7A1D81921C8E8EBF00E64242 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A1D81831C8E8D4100E64242 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7A1D81931C8E8EBF00E64242 /* AlamofireObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A1D81841C8E8D4100E64242 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7A1D81941C8E8EBF00E64242 /* HTTPStatusCodes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A1D81851C8E8D4100E64242 /* HTTPStatusCodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7A1D81951C8E8EBF00E64242 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A1D81861C8E8D4100E64242 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7A1D81961C8E8EBF00E64242 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A1D81871C8E8D4100E64242 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		7A1D81971C8E8EBF00E64242 /* WatsonDeveloperCloud.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A1D81881C8E8D4100E64242 /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35468F071CAF285800521142 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35468F021CAF285800521142 /* Alamofire.framework */; };
+		35468F081CAF285800521142 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35468F031CAF285800521142 /* AlamofireObjectMapper.framework */; };
+		35468F091CAF285800521142 /* HTTPStatusCodes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35468F041CAF285800521142 /* HTTPStatusCodes.framework */; };
+		35468F0A1CAF285800521142 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35468F051CAF285800521142 /* ObjectMapper.framework */; };
+		35468F0B1CAF285800521142 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35468F061CAF285800521142 /* Starscream.framework */; };
+		35468F0E1CAF295E00521142 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35468F021CAF285800521142 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35468F0F1CAF295E00521142 /* AlamofireObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35468F031CAF285800521142 /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35468F101CAF295E00521142 /* HTTPStatusCodes.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35468F041CAF285800521142 /* HTTPStatusCodes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35468F111CAF295E00521142 /* ObjectMapper.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35468F051CAF285800521142 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35468F121CAF295E00521142 /* Starscream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35468F061CAF285800521142 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35468F141CAF2A8000521142 /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35468F131CAF2A8000521142 /* Credentials.plist */; };
+		35468F1C1CAF33F100521142 /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35468F1B1CAF33F100521142 /* WatsonDeveloperCloud.framework */; };
+		35468F1D1CAF340C00521142 /* WatsonDeveloperCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35468F1B1CAF33F100521142 /* WatsonDeveloperCloud.framework */; };
+		35468F1E1CAF340C00521142 /* WatsonDeveloperCloud.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 35468F1B1CAF33F100521142 /* WatsonDeveloperCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35468F401CB0CB9300521142 /* SpeechSample.wav in Resources */ = {isa = PBXBuildFile; fileRef = 35468F3F1CB0CB9300521142 /* SpeechSample.wav */; };
 		7A1FCD931BA9D66D0090E1EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FCD921BA9D66D0090E1EB /* AppDelegate.swift */; };
 		7A1FCD951BA9D66D0090E1EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FCD941BA9D66D0090E1EB /* ViewController.swift */; };
 		7A1FCD981BA9D66D0090E1EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1FCD961BA9D66D0090E1EB /* Main.storyboard */; };
 		7A1FCD9A1BA9D66D0090E1EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1FCD991BA9D66D0090E1EB /* Assets.xcassets */; };
 		7A1FCD9D1BA9D66D0090E1EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1FCD9B1BA9D66D0090E1EB /* LaunchScreen.storyboard */; };
-		7AB247A41C973C1D00C089B5 /* Credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AB247A31C973C1D00C089B5 /* Credentials.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,24 +36,31 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7A1D81921C8E8EBF00E64242 /* Alamofire.framework in CopyFiles */,
-				7A1D81931C8E8EBF00E64242 /* AlamofireObjectMapper.framework in CopyFiles */,
-				7A1D81941C8E8EBF00E64242 /* HTTPStatusCodes.framework in CopyFiles */,
-				7A1D81951C8E8EBF00E64242 /* ObjectMapper.framework in CopyFiles */,
-				7A1D81961C8E8EBF00E64242 /* Starscream.framework in CopyFiles */,
-				7A1D81971C8E8EBF00E64242 /* WatsonDeveloperCloud.framework in CopyFiles */,
+				35468F0E1CAF295E00521142 /* Alamofire.framework in CopyFiles */,
+				35468F0F1CAF295E00521142 /* AlamofireObjectMapper.framework in CopyFiles */,
+				35468F101CAF295E00521142 /* HTTPStatusCodes.framework in CopyFiles */,
+				35468F111CAF295E00521142 /* ObjectMapper.framework in CopyFiles */,
+				35468F121CAF295E00521142 /* Starscream.framework in CopyFiles */,
+				35468F1E1CAF340C00521142 /* WatsonDeveloperCloud.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		35468F021CAF285800521142 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../../Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		35468F031CAF285800521142 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = ../../Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		35468F041CAF285800521142 /* HTTPStatusCodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTTPStatusCodes.framework; path = ../../Carthage/Build/iOS/HTTPStatusCodes.framework; sourceTree = "<group>"; };
+		35468F051CAF285800521142 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = ../../Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		35468F061CAF285800521142 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = ../../Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		35468F131CAF2A8000521142 /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Credentials.plist; path = ../../../WatsonDeveloperCloudTests/Credentials.plist; sourceTree = "<group>"; };
+		35468F1B1CAF33F100521142 /* WatsonDeveloperCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatsonDeveloperCloud.framework; path = ../../Carthage/Build/iOS/WatsonDeveloperCloud.framework; sourceTree = "<group>"; };
+		35468F3F1CB0CB9300521142 /* SpeechSample.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SpeechSample.wav; sourceTree = "<group>"; };
 		7A1D81831C8E8D4100E64242 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		7A1D81841C8E8D4100E64242 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
 		7A1D81851C8E8D4100E64242 /* HTTPStatusCodes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HTTPStatusCodes.framework; path = Carthage/Build/iOS/HTTPStatusCodes.framework; sourceTree = "<group>"; };
 		7A1D81861C8E8D4100E64242 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		7A1D81871C8E8D4100E64242 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
-		7A1D81881C8E8D4100E64242 /* WatsonDeveloperCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatsonDeveloperCloud.framework; path = Carthage/Build/iOS/WatsonDeveloperCloud.framework; sourceTree = "<group>"; };
 		7A1FCD8F1BA9D66D0090E1EB /* SpeechToText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechToText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A1FCD921BA9D66D0090E1EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A1FCD941BA9D66D0090E1EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +68,6 @@
 		7A1FCD991BA9D66D0090E1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A1FCD9C1BA9D66D0090E1EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A1FCD9E1BA9D66D0090E1EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7AB247A31C973C1D00C089B5 /* Credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credentials.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +75,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1D818A1C8E8D4100E64242 /* Alamofire.framework in Frameworks */,
-				7A1D818B1C8E8D4100E64242 /* AlamofireObjectMapper.framework in Frameworks */,
-				7A1D818D1C8E8D4100E64242 /* ObjectMapper.framework in Frameworks */,
-				7A1D818E1C8E8D4100E64242 /* Starscream.framework in Frameworks */,
-				7A1D818C1C8E8D4100E64242 /* HTTPStatusCodes.framework in Frameworks */,
-				7A1D818F1C8E8D4100E64242 /* WatsonDeveloperCloud.framework in Frameworks */,
+				35468F1C1CAF33F100521142 /* WatsonDeveloperCloud.framework in Frameworks */,
+				35468F0B1CAF285800521142 /* Starscream.framework in Frameworks */,
+				35468F0A1CAF285800521142 /* ObjectMapper.framework in Frameworks */,
+				35468F091CAF285800521142 /* HTTPStatusCodes.framework in Frameworks */,
+				35468F081CAF285800521142 /* AlamofireObjectMapper.framework in Frameworks */,
+				35468F1D1CAF340C00521142 /* WatsonDeveloperCloud.framework in Frameworks */,
+				35468F071CAF285800521142 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +108,14 @@
 		7A1FCD911BA9D66D0090E1EB /* SpeechToText */ = {
 			isa = PBXGroup;
 			children = (
+				35468F131CAF2A8000521142 /* Credentials.plist */,
+				35468F3F1CB0CB9300521142 /* SpeechSample.wav */,
 				7A1FCD921BA9D66D0090E1EB /* AppDelegate.swift */,
 				7A1FCD941BA9D66D0090E1EB /* ViewController.swift */,
 				7A1FCD961BA9D66D0090E1EB /* Main.storyboard */,
 				7A1FCD991BA9D66D0090E1EB /* Assets.xcassets */,
 				7A1FCD9B1BA9D66D0090E1EB /* LaunchScreen.storyboard */,
 				7A1FCD9E1BA9D66D0090E1EB /* Info.plist */,
-				7AB247A31C973C1D00C089B5 /* Credentials.plist */,
 			);
 			path = SpeechToText;
 			sourceTree = "<group>";
@@ -113,12 +123,17 @@
 		E1071B8A1C1C7BAD00E19A28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35468F1B1CAF33F100521142 /* WatsonDeveloperCloud.framework */,
+				35468F021CAF285800521142 /* Alamofire.framework */,
+				35468F031CAF285800521142 /* AlamofireObjectMapper.framework */,
+				35468F041CAF285800521142 /* HTTPStatusCodes.framework */,
+				35468F051CAF285800521142 /* ObjectMapper.framework */,
+				35468F061CAF285800521142 /* Starscream.framework */,
 				7A1D81831C8E8D4100E64242 /* Alamofire.framework */,
 				7A1D81841C8E8D4100E64242 /* AlamofireObjectMapper.framework */,
 				7A1D81851C8E8D4100E64242 /* HTTPStatusCodes.framework */,
 				7A1D81861C8E8D4100E64242 /* ObjectMapper.framework */,
 				7A1D81871C8E8D4100E64242 /* Starscream.framework */,
-				7A1D81881C8E8D4100E64242 /* WatsonDeveloperCloud.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,7 +171,7 @@
 				TargetAttributes = {
 					7A1FCD8E1BA9D66D0090E1EB = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = CDXLDASP22;
+						DevelopmentTeam = PP64RT7P8Z;
 					};
 				};
 			};
@@ -185,8 +200,9 @@
 			files = (
 				7A1FCD9D1BA9D66D0090E1EB /* LaunchScreen.storyboard in Resources */,
 				7A1FCD9A1BA9D66D0090E1EB /* Assets.xcassets in Resources */,
-				7AB247A41C973C1D00C089B5 /* Credentials.plist in Resources */,
+				35468F141CAF2A8000521142 /* Credentials.plist in Resources */,
 				7A1FCD981BA9D66D0090E1EB /* Main.storyboard in Resources */,
+				35468F401CB0CB9300521142 /* SpeechSample.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
